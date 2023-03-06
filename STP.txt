@@ -2,17 +2,16 @@
  switch３
 
 （問２）
-・switch1-switch2 : BP-DP
-→switch1と2は何も役割が振られていない、且つ送信元スイッチのブリッジIDがswitch2の方が小さいため。
-　switch1は何も役割がないため。
+・switch1-switch2 : DP-RP
+→switch1はswitch2の対向ポートのため。switch2はルートブリッジまでの距離が最も近いため。
 
 ・switch1-switch3 : RP-DP
 →switch1はルートブリッジに最も近いポートだから。
 　switch3はルートブリッジの全てのポートは必ず指定ポートになるため。
 
-・switch2-switch4 : BP-DP
-→switch2と4は何も役割が振られていない、且つ送信元スイッチのブリッジIDがswitch4の方が小さいため。
-　switch2は何も役割がないため。
+・switch2-switch4 : DP-BP
+→switch2はswitch4よりパスコストが小さいため。
+　switch4は何も役割がないため。
 
 ・switch3-switch4 : DP-RP
 →switch3はルートブリッジの全てのポートは必ず指定ポートになるため。
