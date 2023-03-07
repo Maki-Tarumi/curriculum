@@ -9,9 +9,9 @@
 →switch1はルートブリッジに最も近いポートだから。
 　switch3はルートブリッジの全てのポートは必ず指定ポートになるため。
 
-・switch2-switch4 : DP-BP
-→switch2はswitch4よりパスコストが小さいため。
-　switch4は何も役割がないため。
+・switch2-switch4 : BP-DP
+→switch4はswitch2よりパスコストが小さいため。
+　switch2は何も役割がないため。
 
 ・switch3-switch4 : DP-RP
 →switch3はルートブリッジの全てのポートは必ず指定ポートになるため。
